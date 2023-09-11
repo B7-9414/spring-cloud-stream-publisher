@@ -1,0 +1,11 @@
+applications:
+- name: Admin-Report
+  memory: 1G
+  services: #Data base
+    - Todo
+  path: target/Data.jar
+  disk_quota: 1G # 10024 M = 1 GB
+  instances: 1
+  routes:
+  - route: admin-report.cfapps.io
+  stack: cflinuxfs3

@@ -1,0 +1,25 @@
+#Appliction Name: 
+spring:
+  application:
+    name: Spring-CloudStream-Publisher-Service
+
+
+#Kafka Config
+  cloud:
+    stream:
+      bindings:
+        output: 
+          destination: message
+          
+          
+          
+#Discovery server:     
+#eureka:
+#  client:
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://localhost:1111/eureka/
+#  instance:
+#    hostname: localhost
+ 
